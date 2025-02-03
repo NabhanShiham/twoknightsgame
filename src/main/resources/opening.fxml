@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="316.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="twoknightgame.ui.OpeningController">
+    <Label layoutX="182.0" layoutY="77.0" text="Two Knights" textFill="#002366">
+        <font>
+            <Font name="MathJax_Main-Bold" size="36.0" />
+        </font>
+    </Label>
+    <HBox alignment="CENTER" prefHeight="103.0" prefWidth="600.0" spacing="20.0">
+        <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                <children>
+                    <Label text="Player 1 Name" />
+                    <TextField fx:id="player1NameField" prefHeight="26.0" prefWidth="158.0" />
+                </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="100.0" spacing="10.0">
+                <children>
+                    <Label text="Player 2 Name" />
+                    <TextField fx:id="player2NameField" prefHeight="26.0" prefWidth="158.0" />
+                </children>
+            </VBox>
+        </children>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+        <children>
+            <Label fx:id="errorLabel" prefHeight="16.0" prefWidth="169.0" textAlignment="CENTER" textFill="#e30e0e" />
+        </children>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+        <children>
+            <Button fx:id="startGameButton" mnemonicParsing="false" onAction="#startGame" prefHeight="51.0" prefWidth="105.0" text="Start Game" />
+            <Button fx:id="showLeaderBoard" mnemonicParsing="false" onAction="#showLeaderBoard" prefHeight="51.0" prefWidth="105.0" text="Leaderboard" />
+        </children>
+    </HBox>
+</VBox>
